@@ -1,0 +1,17 @@
+class gravedad {
+     public static void main (String [] arguments){
+          System.out.println("ingrese el tiempo");
+          String t= System.console().readLine();
+          System.out.println("ingrese la velocidad inicial ");
+          String v=System.console().readLine();
+          System.out.println("ingrese la pocicion inicial ");
+          String p=System.console().readLine();
+          
+          double tiempo = Double.parseDouble(t);
+          double velocidadi = Double.parseDouble(v);
+          double pocicioni= Double.parseDouble(p);
+          double aceleracion = 9.8;
+          double resu=(0.5 * (aceleracion*(tiempo*tiempo)))+(velocidadi*tiempo)+(pocicioni) ;
+          System.out.println(resu);
+}
+} 
