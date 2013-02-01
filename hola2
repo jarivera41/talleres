@@ -1,0 +1,6 @@
+class hola2 {
+     public static void main (String [] arguments){
+          System.out.println("hola mundo");
+          System.out.println("linea numero 2");
+}
+}
