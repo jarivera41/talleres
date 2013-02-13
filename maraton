@@ -1,0 +1,46 @@
+class maraton{
+     public static void main (String[] arguments){
+     
+     System.out.printl("cuantas personas corrieron en la maraton ");
+     String cantidad = System.console().readLine();
+     int c=Integer.parseInt(c);
+     int[] candidatos= new[c];
+     int[] tiempo= new[c];  
+
+      for (i=0 ; i<candidatos.length ; i++){
+      System.out.println("ingrese el nombre del corredor");
+      String a= System.console().readLine();
+      int b= integer.parseInt(a);
+      candidatos[i]=b;
+      System.out.println("ingrese el tiempo del corredor ");
+      a= System.console().readLine();
+      b= Integer.parseInt(a);
+      tiempo[i]=b;
+    }      
+      int aux;
+      string aux1;
+      for(i=0 ; i< candidatos.length ; i++){
+      
+       for(j=1 ; j< candidatos.length ; i++){
+                  
+              if( tiempo[i]< tiempo[j]){
+                     aux= tiempo[i];
+                     tiempo[i]=tiempo[j];
+                     tiempo[j]= aux;
+                     
+                     aux1= candidato[i];
+                     candidato[i]=candidato[j];
+                     candidato[j]= aux;
+
+                       }
+          }    
+    
+
+    
+    }
+    
+     System.out.println("el primer puesto es :" candidato[0] " con un tiempo de " tiempo [0] );
+     System.out.println("el segundo puesto es :" candidato[2] "con un tiempo de " tiempo[1] );
+
+   }
+}
