@@ -1,0 +1,25 @@
+class nomina{ 
+  public static void main (String[] arguments){ 
+   System.out.println("ingrese las horas trabajadas");   
+ String horast=System.console().readLine();  
+  int horastrabajadas= Integer.parseInt(horast); 
+
+   if (horastrabajadas<=60){
+            double sueldo; 
+  System.out.println("ingrese el valor de las horas trabajadas");   
+    String vlr=System.console().readLine();  
+     double valorhoras= Double.parseDouble(vlr);      
+    if (valorhoras >= 8000){
+    if(horastrabajadas>= 40 && horastrabajadas<=60){  
+               sueldo= ((horastrabajadas-40)*(valorhoras*1.5))+(40*valorhoras); 
+                        }else
+ {            sueldo =horastrabajadas*valorhoras;         
+     }             
+System.out.println("el valor de su sueldo es ");
+       System.out.println( sueldo);  
+    }     
+} 
+
+}
+
+}   
