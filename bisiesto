@@ -1,0 +1,19 @@
+public class Bisiesto {
+    public static void main (String [] arguments){
+        String x;
+        System.out.println("ingrese el año");
+        x= System.console().readLine();
+        int año= Integer.parseInt(x);
+        int b=-1;
+        while(año ! b){
+        if (año % 4=0 AND año%100=!0){
+            System.out.println("si es bisiesto");
+          }
+        else {
+                 System.out.println("no es bisiesto");
+             }
+        System.out.println("ingrese el año");
+        x= System.console().readLine();
+    }
+    }
+}
