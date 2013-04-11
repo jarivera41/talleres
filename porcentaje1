@@ -1,0 +1,31 @@
+public class porcetajedia {
+    public static void main (String [] arguments){
+        String hor;
+        String min;
+        String seg;
+        
+        System.out.println("ingrese la hora");
+        hor= System.console().readLine();
+        
+        System.out.println("ingrese los minutos");
+        min= System.console().readLine();
+        
+        System.out.println("ingrese los segundos");
+        seg= System.console().readLine();
+        
+        int hora;
+        int segundos;
+        int minutos;
+        int porcentaje;
+        hora= Integer.parseInt(hor);
+        minutos= Integer.parseInt(min);
+        segundos= Integer.parseInt(seg);
+        
+        porcentaje=((hora*60*60)+(minutos*60)+(segundos));
+        porcentaje= (porcentaje*100)/86400;
+        
+        System.out.println("el porcentaje es :    " +porcentaje);
+        
+        
+    }
+}
