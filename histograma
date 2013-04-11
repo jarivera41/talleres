@@ -1,11 +1,16 @@
 public class Histograma {
-    public static void main (String[] arguments){
+
+
+    public static void main(String[] args) {
+       
+   
     System.out.println("ingrese el tamaño");
     String tam ;
         tam = System.console().readLine();
     int tamañ=Integer.parseInt(tam) ;
-    int tamaño= tamaño-1;
-    int [] numeros= new [tamaño];
+    int tamaño= tamañ-1;
+    int [] numeros;
+        numeros = new [tamaño];
     int aux;
     
     for (int i=0;i< tamaño; i++){
@@ -28,7 +33,9 @@ public class Histograma {
         while(numeros[i] <=limitesuperior){
             if(numeros[i] <=limitesuperior && numeros[i] >= limiteinferior]  ){
          contados=contados+1;   
+         i=i+1;
         }
+            i=i+1;
         }
         System.out.println("los nueros entre"+limiteinferior+"y"+limitesuperior);
         System.out.println(contados);
@@ -43,5 +50,5 @@ public class Histograma {
     }
 
   }
-
+    
 
