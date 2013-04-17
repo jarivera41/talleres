@@ -6,7 +6,7 @@ public class Bisiesto {
         int año= Integer.parseInt(x);
         int b=-1;
         while(año ! b){
-        if (año % 4=0 AND año%100=!0){
+        if (año % 4=0 && año%100 != 0){
             System.out.println("si es bisiesto");
           }
         else {
