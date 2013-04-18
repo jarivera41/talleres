@@ -3,10 +3,10 @@ public class Bisiesto {
         String x;
         System.out.println("ingrese el año");
         x= System.console().readLine();
-        int año= Integer.parseInt(x);
+        int ano= Integer.parseInt(x);
         int b=-1;
-        while(año ! b){
-        if (año % 4=0 && año%100 != 0){
+        while(ano != b){
+        if (ano % 4=0 && ano%100 != 0){
             System.out.println("si es bisiesto");
           }
         else {
