@@ -1,23 +1,25 @@
+
+import java.util.Scanner;
 public class Histograma {
 
 
     public static void main(String[] args) {
-       
-   
+       Scanner leer = new Scanner (System.in);
+   int taman;
     System.out.println("ingrese el tamaño");
-    String tam ;
-        tam = System.console().readLine();
-    int tamañ=Integer.parseInt(tam) ;
-    int tamaño= tamañ-1;
-    int [] numeros;
-        numeros = new [tamaño];
+    
+    taman=leer.nextInt();
+    
+    int tamano= (taman-1);
+    int[] numeros;
+        numeros = new int[tamano];
     int aux;
     
-    for (int i=0;i< tamaño; i++){
+    for (int i=0;i< tamano; i++){
         numeros[i]=((int)(Math.random()*100)); 
     }
-    for(int i=0; i< (tamaño-1); i++){
-     for(int j=1;j<tamaño;i++){
+    for(int i=0; i< numeros.length; i++){
+     for(int j=1;j<numeros.length;j++){
          if (numeros[i]<numeros[j]){
              aux=numeros[i];
              numeros[i]=numeros[j];
@@ -27,11 +29,12 @@ public class Histograma {
     }
     int limiteinferior =numeros[0];
     int limitesuperior=10;
-    int contados;
+    int contados=0;
     int i=0;
-    while (limitesuperior <=tamaño){
+    
+    while (limitesuperior <=tamano){
         while(numeros[i] <=limitesuperior){
-            if(numeros[i] <=limitesuperior && numeros[i] >= limiteinferior]  ){
+            if(numeros[i] <=limitesuperior && numeros[i] >= limiteinferior  ){
          contados=contados+1;   
          i=i+1;
         }
@@ -50,5 +53,4 @@ public class Histograma {
     }
 
   }
-    
-
+   
