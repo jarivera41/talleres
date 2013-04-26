@@ -1,19 +1,21 @@
+import java.util.Scanner;
 public class Bisiesto {
     public static void main (String [] arguments){
-        String x;
+        Scanner leer = new Scanner (System.in);
         System.out.println("ingrese el año");
-        x= System.console().readLine();
-        int ano= Integer.parseInt(x);
+       
+        int ano=0;
+        ano=leer.nextInt();
         int b=-1;
         while(ano != b){
-        if (ano % 4=0 && ano%100 != 0){
-            System.out.println("si es bisiesto");
-          }
+      if((ano%4)==0&&ano%100 !=0){
+         System.out.println("es bisiesto"); 
+      }
         else {
                  System.out.println("no es bisiesto");
              }
         System.out.println("ingrese el año");
-        x= System.console().readLine();
+        ano=leer.nextInt();
     }
     }
 }
